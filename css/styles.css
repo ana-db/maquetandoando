@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+h1 {
+    margin: 0;
+}
+
 header {
     background-color: palevioletred;
     min-height: 10vh; /* ocupa el 20% del alto de la pantalla del dispositivo */
@@ -138,8 +142,31 @@ footer {
 
 /* MAQUETANDO POSTER */
 .container .poster:first-child {     
-    background: url('/img/hister.png');
+    background: url('/img/hister_grey.png');
     background-position: center;
     background-size: cover;
-    filter: grayscale(100%);
+    /* filter: grayscale(100%); */
+}
+
+
+.poster h2, .poster h3 {
+    color: yellow;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: 'Open Sans', sans-serif;;
+    font-weight: bold;
+}
+
+.poster h2 {
+    font-size: 50px;
+}
+
+.poster h3 {
+    font-size: 27px;
+}
+
+.poster blockquote {
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    background-color: yellow;
+    opacity: 0.5;
 }
