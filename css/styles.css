@@ -1,0 +1,137 @@
+@import url(resetynormalize.css);
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background-color: palevioletred;
+    min-height: 20vh; /* ocupa el 20% del alto de la pantalla del dispositivo */
+    padding: 5px;
+} 
+
+nav {
+    background-color: orange;
+    min-height: 10vh; /* ocupa el 10% del alto de la pantalla del dispositivo */
+}
+
+body {
+    background-color: seagreen;
+}
+
+main {
+    /*
+    max-width: 1024px; /* 1. ajustamos el contenido al tamño de la pantalla 
+    margin: auto; /* 2. centramos contenido de main 
+    margin-bottom: 100px; /* 3. dejamos un margen inferior entre el final del main y el de la web
+    color: white;
+    */
+    background-color: darkcyan;
+    min-height: 80vh;
+    padding: 5 3vw; /* separacion main: 5 arriba y abajo y 3 en laterlaes */
+}
+
+/*
+.box {
+    /* dar formato a las cajas 
+    display: inline-block; /* todo el ancho de su contenedor 
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box; /* para asegurarnos que el tamaño de la caja sea 100 (alto y ancho especificado) aunque incluyamos lí­neas de distinto grosor */
+
+    /* para dar estilo a la caja
+    border: 2px solid goldenrod;
+    background-color: yellow;
+    border-radius: 15px;
+
+    /* para dar estilo al texto de la caja 
+    color: white;
+    font-size: 2.5em;
+    text-align: center;
+}*/
+
+/* FOOTER */
+
+footer { 
+	color: white;
+	/* para centrar contenido: */
+    max-width: 1024px;
+    margin: auto;
+    
+    text-align: right;
+
+    background-color: green; 
+
+    min-height: 10vh;
+} 
+
+
+/*POSTER: estilos para practicar con FLEXBOX */
+.container{
+    border:5px solid black;  
+    width: 80%;
+    margin: auto;
+    
+    /* popiedades para flexbox: 
+    display: flex; /*por defecto, su display era block, los hijos ocupaban todo el espacio del padre
+    flex-direction: row; /* por defecto 
+    flex-wrap: wrap; /* por defecto acomoda todos los hijos sin desbordar
+    justify-content: center; /*quitar el width a los hijos para poder justificar el contenido 
+    */
+}
+
+.poster{ /* .container div */
+    background-color: yellow;
+    width: 100%;
+    min-height: 400px;
+    margin-bottom: 20px;
+
+    border: 5px solid goldenrod;
+
+    /* para dar estilo al texto de la caja */
+    color: white;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.container .poster:last-child {
+    background-color: goldenrod;
+    width: 100%;
+    min-height: 400px;
+    margin-bottom: 0px;
+
+    border: 5px solid yellow;
+
+    /* para dar estilo al texto de la caja */
+    color: white;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+
+/* MEDIA QUERY para pantallas grandes */
+@media screen and (min-width: 576px) {
+    .container {
+        /* popiedades para flexbox: */
+        display: flex; /*por defecto, su display era block, los hijos ocupaban todo el espacio del padre */
+        flex-wrap: wrap; /* por defecto acomoda todos los hijos sin desbordar */
+    }
+    
+    nav {
+        max-width: 1024px;
+        margin: auto;
+    }
+
+    .poster {
+        width: 48%; /* width: calc(50% - 20px); */
+        margin-right: 2%; /* margin-right: 20%; */
+    }
+
+    .container .poster:nth-child(even) {
+        margin-right: 0;
+    }
+
+    .container .poster:last-child {     
+        margin-bottom: 20px;
+    }
+}
