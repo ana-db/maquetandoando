@@ -148,25 +148,58 @@ footer {
     /* filter: grayscale(100%); */
 }
 
-
-.poster h2, .poster h3 {
+.poster hgroup {
     color: yellow;
     text-shadow: 2px 2px 4px #000000;
-    font-family: 'Open Sans', sans-serif;;
+    font-family: 'Alatsi', sans-serif;
     font-weight: bold;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 139px;
 }
 
 .poster h2 {
-    font-size: 50px;
+    font-size: 46px;
 }
-
+ 
 .poster h3 {
-    font-size: 27px;
+    font-size: 25px;
 }
 
 .poster blockquote {
+    color: black;   
+    background: rgba(255, 255, 0, 0.5); /* background-color: rgb(255, 255, 0); + opacity: 0.5; */
+    margin-right: 20px;
+    margin-left: 20px;
+    font-size: 29px;
+    text-align: left;
+    font-family: 'Bitter', serif;
+    padding: 10px;
+}
+
+footer.textopie{
     color: black;
-    font-family: 'Open Sans', sans-serif;
-    background-color: yellow;
-    opacity: 0.5;
+    font-family: 'Bitter', serif;
+    background-color: white;
+    font-size: 10px;
+    text-align: left; 
+    /* contendor siempre con posición relativa (para posicionar las imágenes respecto a él): */
+    position: relative;
+}
+
+p.morado > span {
+    color: purple;
+    font-weight: bold;
+}
+
+img {
+    margin: auto;
+    display: block;
+    /* posicionamos las imágenes de forma absoluta sobre el contenedor*/
+    position:absolute;
+    right: 10px;
+    top: 10px;
+    /* formato */
+    display: inline-block;
+    width: 30%;
 }
