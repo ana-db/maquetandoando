@@ -68,7 +68,7 @@ footer {
 
 /*POSTER: estilos para practicar con FLEXBOX */
 .container{
-    border:5px solid black;  
+    /* border:5px solid black;  */ 
     width: 80%;
     margin: auto;
     
@@ -133,4 +133,13 @@ footer {
         margin-bottom: 20px;
     }
 
+}
+
+
+/* MAQUETANDO POSTER */
+.container .poster:first-child {     
+    background: url('/img/hister.png');
+    background-position: center;
+    background-size: cover;
+    filter: grayscale(100%);
 }
