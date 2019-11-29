@@ -205,3 +205,29 @@ img {
     display: inline-block;
     width: 30%;
 }
+
+/*
+img:first-child {
+    margin: auto;
+    display: block;
+    /* posicionamos las imágenes de forma absoluta sobre el contenedor
+    position:absolute;
+    right: 10px;
+    top: 10px;
+    /* formato 
+    display: inline-block;
+    width: 30%;
+}
+
+img:last-child {
+    margin: auto;
+    display: block;
+    /* posicionamos las imágenes de forma absoluta sobre el contenedor
+    position:absolute;
+    right: 10px;
+    top: 10px;
+    /* formato 
+    display: inline-block;
+    width: 30%;
+}
+*/
