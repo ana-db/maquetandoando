@@ -124,10 +124,7 @@ footer {
         margin: auto;
     }
 
-    .poster {
-        width: 48%; /* width: calc(50% - 20px); */
-        margin-right: 2%; /* margin-right: 20%; */
-    }
+    
 
     .container .poster:nth-child(even) {
         margin-right: 0;
@@ -137,11 +134,28 @@ footer {
         margin-bottom: 20px;
     }
 
+    .poster h2 {
+        font-size: 3rem;
+    }
 }
 
 
 /* MAQUETANDO POSTER */
-.container .poster:first-child {     
+.bg-hipster {    
+    background: url('/img/hister_grey.png');
+    background-position: center;
+    background-size: cover;
+    /* filter: grayscale(100%); */
+}
+
+.bg-hipster-color {    
+    background: url('/img/hister.png');
+    background-position: center;
+    background-size: cover;
+    /* filter: grayscale(100%); */
+}
+
+.container .poster:first-child { /* bg-hipster podría ser una clase para ese poster */    
     background: url('/img/hister_grey.png');
     background-position: center;
     background-size: cover;
@@ -158,10 +172,15 @@ footer {
     margin-bottom: 164px;
 }
 
+
 .poster h2 {
-    font-size: 46px;
+    font-size: 2.5rem;
+    color: #ffff00;
+    font-family: 'Alatsi', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0;
 }
- 
+
 .poster h3 {
     font-size: 25px;
 }
@@ -175,6 +194,7 @@ footer {
     text-align: left;
     font-family: 'Bitter', serif;
     padding: 10px;
+    line-height: 1.6rem; /* espacio entre líneas */
 }
 
 footer.textopie{
@@ -205,6 +225,35 @@ img {
     display: inline-block;
     width: 30%;
 }
+
+.poster {
+    width: 48%; /* width: calc(50% - 20px); */
+    margin-right: 2%; /* margin-right: 20%; */
+    /*width: calc(35% - 20px);
+    margin-right: 20px;*/
+    height: 80vh; /* margin-right: 20%; */
+    position: relative; /* contenedor sobre el que se va a posicionar el footer */
+
+}
+
+.poster footer {
+    position: absolute; /* posicioneamos el footer debajo del poster (contenedor relativo) */
+    bottom: 0;
+}
+
+.poster h2 {
+    color: #ffff00;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: 'Alatsi', sans-serif;
+}
+
+.poster h3 {
+    color: #ffff00;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: 'Alatsi', sans-serif;
+}
+
+
 
 /*
 img:first-child {
