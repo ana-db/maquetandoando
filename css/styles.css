@@ -119,6 +119,16 @@ footer {
     text-align: center;
 }
 
+
+/* 7- custom
+**********************************************/
+.fa-github { /* fontawesome */
+	color: white;
+	font-size: 1.5em;
+    text-decoration: none; /* quita la línea de subrayado del link */
+}
+
+
 /* 8- media
 **********************************************/
 /* MEDIA QUERY para pantallas grandes */
@@ -233,14 +243,48 @@ p.morado > span {
 }
 
 img {
+    width: 8em; 
+}
+
+.img1 {
     margin: auto;
     display: block;
     /* posicionamos las imágenes de forma absoluta sobre el contenedor*/
     position:absolute;
-    right: 10px;
-    top: 10px;
+    right: 5px;
+    top: 12px;
     /* formato */
     display: inline-block;
-    width: 30%;
+    width: 30%; 
 } 
 
+.img2 {
+    margin: auto;
+    display: block;
+    /* posicionamos las imágenes de forma absoluta sobre el contenedor*/
+    position:absolute;
+    right: 5px;
+    top: 35px;
+    /* formato */
+    display: inline-block;
+    width: 30%; 
+}
+
+/* maquetamos con flex el grupo de los 2 textos y el de las imágenes: 
+.poster:nth-child(1) footer .textos{
+    width:75%;
+}
+
+.poster:nth-child(1) footer .imagenes{
+    width:20%;
+}
+
+.poster:nth-child(1) footer .textos p{
+    text-align: left;
+    width: 80%;
+}
+
+.poster:nth-child(1) footer .imagenes img{
+    max-width:100%
+}
+*/
