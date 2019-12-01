@@ -48,9 +48,10 @@
                     <footer class="textopie"> 
                     <!-- para posicionar con flex el texto y las imágenes necesitaríamos 2 cajas (divs) para posicionarlo: 1 para p y otra para imgs-->
                         
-                            <p>Cada vez somos más las personas que <br> contribuimos con nuestras acciones y actitudes <br> diarias a construir una sociedad igualitaria.</p>
+                            <p>Cada vez somos más las personas que contribuimos con nuestras acciones y actitudes diarias a construir una sociedad igualitaria.</p>
                             <p class="morado"><span>8 DE MARZO, </span>DÍA INTERNACIONAL DE LAS MUJERES</p>
                         
+
                             <img src="img/logo-emakunde.png" alt="emakunde">
                             <img src="img/logo_gv.png" alt="gv">
                         
